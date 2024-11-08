@@ -1,3 +1,4 @@
+
 # See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/codespaces-linux/.devcontainer/base.Dockerfile
 
 FROM mcr.microsoft.com/vscode/devcontainers/universal:2-focal
@@ -16,4 +17,3 @@ COPY Makefile /tmp/
 RUN su $USER -c "/usr/bin/python3 -m venv /home/${USER}/venv" \
    && su $USER -c "${VENV_PATH}/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/requirements.txt" \
    && rm -rf /tmp/requirements.txt 
-
