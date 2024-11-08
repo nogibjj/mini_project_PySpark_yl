@@ -11,5 +11,5 @@ uvicorn==0.18.3
 pyspark
 requests
 tabulate
-
+ruff
 
